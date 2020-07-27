@@ -1,0 +1,8 @@
+<app-loader [isLoading]="isLoading"></app-loader>
+
+<div *ngFor="let list of posts">
+    <p>{{list.title}}</p>
+    <p>{{list.description}}</p>
+
+</div>
+<div *ngIf="listItems.length == 0" class="alert alert-danger">errorssssss</div>

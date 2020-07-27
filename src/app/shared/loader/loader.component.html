@@ -1,0 +1,8 @@
+<!-- <div [hidden]="!isLoading" class="text-xs-center">
+    <i class="fas fa-cog fa-spin fa-3x"></i> <span>{{ message }}</span>
+</div> -->
+<div *ngIf="loading" class="overlayLoading">
+    <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
